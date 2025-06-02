@@ -268,4 +268,12 @@ border-radius: 5px;
     .intro{
         height: 640px;
     }
+
+    .me .text{
+        font-size: 17px;
+    }
+
+    .me .text p {
+        font-size: 14px;
+    }
 }
