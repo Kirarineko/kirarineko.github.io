@@ -263,5 +263,9 @@ border-radius: 5px;
        line-height: 60px;
        font-size: 24px;
        font-weight: bold;
+       
+    }
+    .intro{
+        height: 640px;
     }
 }
