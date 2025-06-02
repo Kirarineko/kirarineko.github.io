@@ -82,7 +82,7 @@ main a:hover{
 .intro{  
     left: 6vw;
     width: 38vw;
-    height: 640px;
+    height: 600px;
     margin-top: 25px;
     display: flex;
     flex-direction: column;
