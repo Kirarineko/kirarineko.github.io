@@ -293,4 +293,7 @@ border-radius: 5px;
     .me .text p {
         font-size: 14px;
     }
+    .cardbutton{
+       display:none
+     }
 }
