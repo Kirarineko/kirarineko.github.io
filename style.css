@@ -233,7 +233,7 @@ border-radius: 5px;
      }
 
      .cardbutton{
-       display:none
+       display:none;
      }
 
      .intro{  
@@ -294,6 +294,7 @@ border-radius: 5px;
         font-size: 14px;
     }
     .cardbutton{
-       display:none
+       display:none;
      }
+     
 }
