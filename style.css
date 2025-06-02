@@ -265,6 +265,23 @@ border-radius: 5px;
        font-weight: bold;
        
     }
+
+    .button .bili{
+        font-size: 25px;
+    }
+
+    .button .bili p{
+        font-size: 14px;
+    }
+
+     .button .github{
+        font-size: 25px;
+    }
+
+    .button .github p{
+        font-size: 14px;
+    }
+
     .intro{
         height: 640px;
     }
