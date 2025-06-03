@@ -20,29 +20,35 @@ header h1 {
 	float: left;
 }
 
-header #header-a-containor {
+header #header-btn-containor {
 	margin-right: 2rem;
-	height: 2.4rem;
-	margin-top: calc(2rem - 1.2rem);
+	height: 4rem;
+	width: 12rem;
 	float: right;
+	display: flex;
+	align-items: center;
+}
+
+header #header-btn {
+	margin-left: auto;
+	margin-right: auto;
+	height: 2.4rem;
 	text-align: center;
 	line-height: 2.4rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	border: 2px dashed #ff99cc;
 	border-radius: 1rem;
 	font-size: 1rem;
-	transition:
-			border 0.2s cubic-bezier(.4, 2, .3, 1),
-			font-size 0.2s cubic-bezier(.4, 2, .3, 1),
-			margin-right 0.2s cubic-bezier(.4, 2, .3, 1),
-			top 0.2s cubic-bezier(.4, 2, .3, 1);
+	transition: border 0.1s ease-in-out, font-size 0.1s ease-in-out
 }
 
-header a:link, header a:visited {
+header a:link, header a:visited, header a:hover {
 	color: white;
 	text-decoration: none;
 }
 
-header #header-a-containor:hover {
+header #header-btn:hover {
 	border: 2px solid #ff99cc;
 	font-size: 1.2rem;
 }
