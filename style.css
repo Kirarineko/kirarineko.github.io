@@ -3,8 +3,10 @@
 	margin: 0;
 }
 
-h1 {
-	color: white;
+
+h1{
+    color: white;
+
 }
 
 header {
@@ -66,11 +68,76 @@ main a:hover {
 	text-decoration: underline;
 }
 
-.cardbutton {
-	position: absolute;
-	right: 50px;
-	background-color: #868686;
+
+.cardbutton{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    right: 8vw;
+    height: 600px;
+    justify-content: space-between;
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.1);
 }
+
+.cardbutton a{
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(.4,2,.3,1);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 0;
+    margin-top: 0;
+    line-height: 30px;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+.cardbutton a p{
+    font-size: 20px;
+}
+
+.cardbutton .zhp{
+    width: 38vw;
+    height: 160px;    
+    background: #ccff66;
+}
+
+.cardbutton .xgs{
+    width: 38vw;
+    height: 160px;
+    background: #ff99cc;
+    margin-top: 20px;
+}
+
+.cardbutton .nc{
+    width: 18vw;
+    height: 160px;
+    background: #66cccc;
+    margin-top: 20px;
+}
+
+.cardbutton .qq{
+    width: 18vw;
+    height: 160px;
+    background: #66cccc;
+    margin-top: 20px;
+    float: right;
+}
+
+.cardbutton a:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+    text-decoration: none;
+}
+
 
 .img1 {
 	width: 200px;
@@ -79,22 +146,22 @@ main a:hover {
 	margin-top: 10vh;
 }
 
-.intro {
-	left: 6vw;
-	width: 38vw;
-	height: 600px;
-	margin-top: 25px;
-	display: flex;
-	flex-direction: column;
-	align-content: 30px;
-	justify-content: 30px;
-	font-size: 20px;
-	background-color: white;
-	border-radius: 15px;
-	position: absolute;
-	box-shadow: 5px 5px 3px #f0f0f0,
-	-5px 5px 3px #f0f0f0;
-	padding: 10px 15px;
+.intro{  
+    left: 8vw;
+    width: 38vw;
+    height: 600px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: 30px;
+    justify-content: 30px;
+    font-size: 20px; 
+    background-color:white;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 5px 5px 3px #f0f0f0,
+    -5px 5px 3px #f0f0f0;
+    padding: 10px 15px;
 }
 
 .me {
