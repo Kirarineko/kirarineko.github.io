@@ -157,8 +157,8 @@ main a:hover{
     background-color:white;
     border-radius: 15px;
     position: absolute;
-    box-shadow: 5px 5px 3px #f0f0f0,
-    -5px 5px 3px #f0f0f0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1),
+    -3px 0px 5px rgba(0, 0, 0, 0.1);
     padding: 10px 15px;
 }
 
@@ -178,6 +178,15 @@ main a:hover{
 
 .me .text {
     flex: 1;
+}
+
+.Kirari {
+    width: 38vw;
+    height: auto;
+    border-radius: 15px;
+    position: absolute;
+    right: 8vw;
+    margin-top: 25px;
 }
 
 .intro h2{
@@ -285,6 +294,10 @@ border-radius: 5px;
 .button .github:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+.gray{
+    color: #868686;
 }
 
     /* 响应式设计 */
