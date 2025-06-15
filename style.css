@@ -82,7 +82,6 @@ main a:hover{
 .cardbutton a{
     display: inline-block;
     margin-top: 10px;
-    border-radius: 12px;
     border: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -106,6 +105,7 @@ main a:hover{
     width: 38vw;
     height: 160px;    
     background: #ccff66;
+    border-radius: 15px;
 }
 
 .cardbutton .xgs{
@@ -113,6 +113,7 @@ main a:hover{
     height: 160px;
     background: #ff99cc;
     margin-top: 20px;
+    border-radius: 15px;
 }
 
 .cardbutton .nc{
@@ -120,6 +121,7 @@ main a:hover{
     height: 160px;
     background: #66cccc;
     margin-top: 20px;
+    border-radius: 15px;
 }
 
 .cardbutton .qq{
@@ -128,6 +130,7 @@ main a:hover{
     background: #66cccc;
     margin-top: 20px;
     float: right;
+    border-radius: 15px;
 }
 
 .cardbutton a:hover {
@@ -160,6 +163,44 @@ main a:hover{
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1),
     -3px 0px 5px rgba(0, 0, 0, 0.1);
     padding: 10px 15px;
+}
+
+.textcard{  
+    left: 8vw;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: 30px;
+    justify-content: 30px;
+    font-size: 20px; 
+    background-color:white;
+    border-radius: 15px;
+    position: absolute;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1),
+    -3px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+}
+
+.cardbutton .星璃简介{
+    display: flex;
+    margin-top: 71vh;
+}
+
+.cardbutton .xinglistore{
+    background: #00CCff;
+    border-radius: 15px;
+    width: 18vw;
+    height: 130px;
+    left: 4.5vw;
+}
+
+.cardbutton .xingliimage{
+    background: #ff99cc;
+    border-radius: 15px;
+    width: 18vw;
+    height: 130px;
+    float: right;
+    left: 7vw;
 }
 
 .me{
@@ -364,6 +405,28 @@ border-radius: 5px;
         width: 38vw;
      }
 
+     .Kirari{
+        display: none;
+     }
+
+     .cardbutton .星璃简介{
+        display: flex;
+        margin-top: -15vh;
+     }
+
+     .cardbutton .xinglistore{
+        width: 38vw;
+        height: 130px;
+        left: 4.5vw;
+     }
+
+     .cardbutton .xingliimage{
+        width: 38vw;
+        height: 130px;
+        float: right;
+        left: 7vw;
+     }
+
     }
 
     @media (max-width: 570px) {
@@ -409,6 +472,11 @@ border-radius: 5px;
     .me .text p {
         font-size: 14px;
     }
+
+     .cardbutton .星璃简介{
+        display: flex;
+        margin-top: -11vh;
+     }
      
 }
 /* awa */
