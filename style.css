@@ -86,7 +86,10 @@ main a:hover{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(.4,2,.3,1);
+    transition: 
+        transform 0.25s cubic-bezier(.22,1,.36,1),
+        box-shadow 0.25s cubic-bezier(.22,1,.36,1),
+        filter 0.25s cubic-bezier(.22,1,.36,1);
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -95,6 +98,7 @@ main a:hover{
     line-height: 30px;
     font-size: 30px;
     padding-top: 15px;
+    will-change: transform, box-shadow, filter;
 }
 
 .cardbutton a p{
@@ -133,12 +137,19 @@ main a:hover{
     border-radius: 15px;
 }
 
-.cardbutton a:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+.cardbutton a:hover, .button a:hover {
+    transform: translateY(-10px) scale(1.04) ;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.22), 0 2px 8px rgba(255,153,204,0.08);
+    filter: brightness(1.07) saturate(1.2);
     text-decoration: none;
+    z-index: 2;
 }
 
+.cardbutton a:active, .button a:active {
+    transform: scale(0.96) translateY(2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    filter: brightness(0.98);
+}
 
 .img1 {
     width: 200px;
@@ -252,6 +263,10 @@ border-left: 5px solid #66cccc;
 padding-left: 15px;
 margin-left: 10px;
 border-radius: 5px;
+transform:
+        cubic-bezier(.22,1,.36,1),
+        box-shadow 0.25s cubic-bezier(.22,1,.36,1),
+        filter 0.25s cubic-bezier(.22,1,.36,1);
 }
 
 .server ul{
@@ -281,6 +296,11 @@ border-radius: 5px;
 
 .button a{
     color: white;
+    transition: 
+        transform 0.25s cubic-bezier(.22,1,.36,1),
+        box-shadow 0.25s cubic-bezier(.22,1,.36,1),
+        filter 0.25s cubic-bezier(.22,1,.36,1);
+    will-change: transform, box-shadow, filter;
 }
 
 .button .bili{
@@ -293,7 +313,7 @@ border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(.4,2,.3,1);
+    transition: inherit;
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -305,10 +325,6 @@ border-radius: 5px;
     font-size: 30px;
 }
 
-.button .bili:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
-}
 
 .button .github{
     display: inline-block;
@@ -321,7 +337,7 @@ border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(.4,2,.3,1);
+    transition: inherit;
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -333,14 +349,10 @@ border-radius: 5px;
     font-size: 30px;
 }
 
-.button .github:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
-}
-
 .gray{
     color: #868686;
 }
+
 
     /* 响应式设计 */
 
