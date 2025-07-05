@@ -15,7 +15,7 @@ header{
     transition: all 0.1s ease;
 }
 
-header a{ 
+header .tianlsama{ 
     border: 2px dashed #ff99cc;
     padding: 5px;
     border-radius: 6px;
@@ -31,6 +31,12 @@ header a{
         font-size 0.2s cubic-bezier(.4,2,.3,1),
         right 0.2s cubic-bezier(.4,2,.3,1),
         top 0.2s cubic-bezier(.4,2,.3,1);
+}
+
+header .test{
+    right: 200px;
+    text-decoration: none;
+    color: #fd8dc5;
 }
 
 header a:hover{
